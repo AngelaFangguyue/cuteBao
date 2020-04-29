@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>卡哇伊</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <style>body{
+            /*background-color:#05cbeb;*/
+            background-color:#ffc107;
+            color:#333333;
+        }
+        button{
+            color:inherit;
+        }
+        #html * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            outline: 0;
+
+        }
+
+        @keyframes waveTail{
+            0%, 100% { transform: rotate(-25deg) }
+            50% { transform: rotate(-35deg) }
+        }
+        @keyframes flicker {
+            0% { transform: skewY(0deg) }
+            50% { transform: skewY(10deg) }
+        }
+        @keyframes squish {
+            0% {
+                transform:scale(1);
+            }
+            80% {
+                transform:scale(1.2);
+            }
+        }</style>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <style id="demo2"></style>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <style>#buttons {
+            position: fixed;
+            right: 15px;
+            top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #buttons>button {
+            font-size: 0.2rem;
+            margin-bottom: 5px;
+        }
+
+        #demo2 {
+            display: none;
+        }
+
+        #demo {
+            font-size: 20px;
+            position: fixed;
+            height: 50vh;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow-y: auto;
+            /*background-color: #4EE4FF;*/
+            /*background-color:PALEGOLDENROD;*/
+        }
+
+        #demo::-webkit-scrollbar {
+            display: none;
+        }
+
+        #html {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+        }</style>
+    <div id="html">
+        <div class="bench">
+            <div class="electric">
+                <div class="head">
+                    <div class="cheek"></div>
+                    <div class="cheek"></div>
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="ear">
+                    <div></div>
+                </div>
+                <div class="ear">
+                    <div></div>
+                </div>
+                <div class="arm"></div>
+                <div class="arm"></div>
+                <div class="tail">
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="water">
+                <div class="head">
+                    <div class="cheek"></div>
+                    <div class="cheek"></div>
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="arm"></div>
+                <div class="arm"></div>
+                <div class="tail">
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fire">
+                <div class="head">
+                    <div class="cheek"></div>
+                    <div class="cheek"></div>
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="arm"></div>
+                <div class="arm"></div>
+                <div class="tail">
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grass">
+                <div class="head">
+                    <div class="cheek"></div>
+                    <div class="cheek"></div>
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                    <div class="mouth"></div>
+                    <div class="speckle"></div>
+                    <div class="speckle"></div>
+                </div>
+                <div class="ear"></div>
+                <div class="ear"></div>
+                <div class="arm"></div>
+                <div class="arm"></div>
+                <div class="tail">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>!function (n) {
+  var e = n.document,
+      t = e.documentElement,
+      i = 960,
+      d = i / 100,
+      o = "orientationchange" in n ? "orientationchange" : "resize",
+      a = function a() {
+    var n = t.clientWidth || 320;
+    n > 640 && (n = 640), t.style.fontSize = n / d + "px";
+  };
+
+  e.addEventListener && (n.addEventListener(o, a, !1), e.addEventListener("DOMContentLoaded", a, !1));
+}(window);</script>
+    <script src="test.f03172c4.js"></script>
+</body>
+
+</html>
